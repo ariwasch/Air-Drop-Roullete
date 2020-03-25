@@ -1,24 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="79q-j1-TUh">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="OCa-Vg-Znc">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="79q-j1-TUh" customClass="ViewController" customModule="AirDrop_Roulette" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CgH-tB-nvM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8id-nq-3g1">
+                                <rect key="frame" x="104" y="406" width="206" height="84"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <state key="normal" title="Air Drop">
+                                    <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="send:" destination="79q-j1-TUh" eventType="touchUpInside" id="nk8-Ce-Eb7"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Welcome to Air Drop Roullete! Push the button below to Air Drop a random picture in your camera roll." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="e3l-9W-QXp">
+                                <rect key="frame" x="20" y="69" width="374" height="212"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="212" id="DfR-Km-MDE"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="e3l-9W-QXp" firstAttribute="centerX" secondItem="CgH-tB-nvM" secondAttribute="centerX" id="RjR-5s-uMy"/>
+                            <constraint firstItem="8id-nq-3g1" firstAttribute="centerX" secondItem="CgH-tB-nvM" secondAttribute="centerX" id="Vyd-Ab-60n"/>
+                            <constraint firstItem="e3l-9W-QXp" firstAttribute="top" secondItem="uI3-bd-OFA" secondAttribute="top" constant="25" id="aIP-pk-gz5"/>
+                            <constraint firstItem="e3l-9W-QXp" firstAttribute="leading" secondItem="CgH-tB-nvM" secondAttribute="leadingMargin" id="ihp-Sy-JQi"/>
+                            <constraint firstItem="8id-nq-3g1" firstAttribute="centerY" secondItem="CgH-tB-nvM" secondAttribute="centerY" id="qfP-fG-U6w"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uI3-bd-OFA"/>
                     </view>
+                    <connections>
+                        <outlet property="textBox" destination="e3l-9W-QXp" id="2Kr-eZ-b6l"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E2t-sM-hPm" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="858" y="78"/>
         </scene>
     </scenes>
 </document>

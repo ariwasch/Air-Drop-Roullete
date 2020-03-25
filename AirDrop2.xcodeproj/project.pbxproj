@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0EE07630D14B0A82D3D52773 /* Pods_AirDrop2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDAE2E0581531151134876B5 /* Pods_AirDrop2.framework */; };
 		95426B9E2413410600214C25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95426B9D2413410600214C25 /* AppDelegate.swift */; };
 		95426BA02413410600214C25 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95426B9F2413410600214C25 /* SceneDelegate.swift */; };
 		95426BA22413410600214C25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95426BA12413410600214C25 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3AC66FE3C7A16F3837A91034 /* Pods-AirDrop2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirDrop2.debug.xcconfig"; path = "Target Support Files/Pods-AirDrop2/Pods-AirDrop2.debug.xcconfig"; sourceTree = "<group>"; };
 		95426B9A2413410600214C25 /* AirDrop2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirDrop2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95426B9D2413410600214C25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95426B9F2413410600214C25 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		95426BA92413410A00214C25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95426BAC2413410A00214C25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95426BAE2413410A00214C25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDAE2E0581531151134876B5 /* Pods_AirDrop2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AirDrop2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D77C34224AF5CB7CFB30A403 /* Pods-AirDrop2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirDrop2.release.xcconfig"; path = "Target Support Files/Pods-AirDrop2/Pods-AirDrop2.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EE07630D14B0A82D3D52773 /* Pods_AirDrop2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				95426B9C2413410600214C25 /* AirDrop2 */,
 				95426B9B2413410600214C25 /* Products */,
+				B2FFA0670E5D3838E1961475 /* Pods */,
+				B4DCDE05A0BBCFE0339B987A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +77,23 @@
 			path = AirDrop2;
 			sourceTree = "<group>";
 		};
+		B2FFA0670E5D3838E1961475 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3AC66FE3C7A16F3837A91034 /* Pods-AirDrop2.debug.xcconfig */,
+				D77C34224AF5CB7CFB30A403 /* Pods-AirDrop2.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B4DCDE05A0BBCFE0339B987A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CDAE2E0581531151134876B5 /* Pods_AirDrop2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 95426BB12413410A00214C25 /* Build configuration list for PBXNativeTarget "AirDrop2" */;
 			buildPhases = (
+				66941CF325C1469FE4683EB3 /* [CP] Check Pods Manifest.lock */,
 				95426B962413410600214C25 /* Sources */,
 				95426B972413410600214C25 /* Frameworks */,
 				95426B982413410600214C25 /* Resources */,
+				AA0D30C33059CC563E6B7D46 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,6 +161,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		66941CF325C1469FE4683EB3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AirDrop2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA0D30C33059CC563E6B7D46 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AirDrop2/Pods-AirDrop2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AirDrop2/Pods-AirDrop2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AirDrop2/Pods-AirDrop2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		95426B962413410600214C25 /* Sources */ = {
@@ -286,37 +354,45 @@
 		};
 		95426BB22413410A00214C25 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AC66FE3C7A16F3837A91034 /* Pods-AirDrop2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = 3K6Q4C6RYZ;
 				INFOPLIST_FILE = AirDrop2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Ari-Wasch.AirDrop2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		95426BB32413410A00214C25 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D77C34224AF5CB7CFB30A403 /* Pods-AirDrop2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = 3K6Q4C6RYZ;
 				INFOPLIST_FILE = AirDrop2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Ari-Wasch.AirDrop2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
